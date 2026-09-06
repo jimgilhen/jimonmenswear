@@ -1,0 +1,175 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jim on Menswear</title>
+    <style>
+        :root {
+            --bg-color: #f7f6f2; /* Warm bond-paper off-white */
+            --text-color: #111111; /* Deep charcoal/black */
+            --text-muted: #666666;
+            --border-color: #d1cbd5;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: "EB Garamond", Garamond, Georgia, serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .memo-container {
+            max-width: 480px;
+            width: 100%;
+            padding: 60px 32px;
+            box-sizing: border-box;
+        }
+
+        /* Header / Title */
+        .memo-header {
+            font-size: 1.4rem;
+            font-weight: 500;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            margin-bottom: 40px;
+            border-bottom: 1px solid var(--text-color);
+            padding-bottom: 16px;
+        }
+
+        /* Core Statement / Memo Body */
+        .memo-body {
+            font-size: 1.15rem;
+            margin-bottom: 48px;
+        }
+
+        .memo-body p {
+            margin: 0 0 20px 0;
+        }
+
+        /* Links List */
+        .memo-links {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 48px 0;
+        }
+
+        .memo-links li {
+            margin-bottom: 14px;
+        }
+
+        .memo-links a {
+            color: var(--text-color);
+            text-decoration: none;
+            font-size: 1.1rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 2px;
+            transition: border-color 0.2s;
+        }
+
+        .memo-links a:hover {
+            border-color: var(--text-color);
+        }
+
+        /* Inline Formspree Newsletter Section */
+        .newsletter-section {
+            border-top: 1px solid var(--border-color);
+            padding-top: 32px;
+        }
+
+        .newsletter-section h3 {
+            font-size: 1rem;
+            font-weight: 500;
+            margin: 0 0 12px 0;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+        }
+
+        form {
+            display: flex;
+            gap: 8px;
+        }
+
+        input[type="email"] {
+            flex: 1;
+            background: transparent;
+            border: 1px solid var(--text-color);
+            border-radius: 0;
+            padding: 10px 12px;
+            color: var(--text-color);
+            font-family: "EB Garamond", Garamond, Georgia, serif;
+            font-size: 1.05rem;
+            outline: none;
+        }
+
+        input[type="email"]::placeholder {
+            color: var(--text-muted);
+        }
+
+        button[type="submit"] {
+            background-color: var(--text-color);
+            color: var(--bg-color);
+            border: none;
+            border-radius: 0;
+            padding: 10px 20px;
+            font-family: "EB Garamond", Garamond, Georgia, serif;
+            font-size: 1.05rem;
+            cursor: pointer;
+            letter-spacing: 0.03em;
+            transition: opacity 0.2s;
+        }
+
+        button[type="submit"]:hover {
+            opacity: 0.85;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 64px;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="memo-container">
+        
+        <div class="memo-header">
+            Jim on Menswear
+        </div>
+
+        <div class="memo-body">
+            <p>Traditional fashion operates on inflated markups and artificial obsolescence. This archive strips away the noise.</p>
+            <p>No sponsors, no affiliate marketing, and no hobbyist gatekeeping. Just structural transparency.</p>
+        </div>
+
+        <ul class="memo-links">
+            <li><a href="https://youtube.com" target="_blank" rel="noopener">01. Watch the channel</a></li>
+            <li><a href="https://instagram.com" target="_blank" rel="noopener">02. Instagram</a></li>
+            <li><a href="https://buymeacoffee.com" target="_blank" rel="noopener">03. Support / Buy me a coffee</a></li>
+        </ul>
+
+        <div class="newsletter-section">
+            <h3>Sign up for the quarterly newsletter</h3>
+            <form action="https://formspree.io/f/mzebaeyp" method="POST">
+                <input type="email" name="email" placeholder="Enter your email" required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <footer>
+            &copy; 2026 Jim on Menswear. All rights reserved.
+        </footer>
+
+    </div>
+
+</body>
+</html>
